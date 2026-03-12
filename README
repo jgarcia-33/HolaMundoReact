@@ -1,0 +1,17 @@
+##Node.js
+
+Node.js permite ejecutar JavaScript fuera del navegador y manejar las librerías de un proyecto.
+
+##Vite
+
+Vite sirve para crear y ejecutar proyectos web rápido, mostrando los cambios en tiempo real.
+
+##React
+
+React es una biblioteca de JavaScript para hacer interfaces de usuario con componentes que se pueden reutilizar.
+
+##Cómo trabajan juntos
+
+Node.js gestiona el proyecto, Vite lo ejecuta y React construye la interfaz.
+
+<img width="1472" height="865" alt="Captura de pantalla 2026-03-12 125108" src="https://github.com/user-attachments/assets/c63e3cf5-5293-4527-88e2-ca2a08f804d5" />
