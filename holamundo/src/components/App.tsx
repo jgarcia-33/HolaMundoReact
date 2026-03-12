@@ -1,8 +1,15 @@
+import { Card } from "./Card";
+import { odsAlumnos } from "../data/Ods";
 function App() {
   return (
-    <>
-      <h1>Holaaa</h1>
-    </>
+    <div className="container">
+      <h1>Lista ODS</h1>
+      <div className="grid" style={{ display: "flex", flexWrap: "wrap" }}>
+        {odsAlumnos.map((item) => (
+          <Card key={item.id} itemOds={item} />
+        ))}
+      </div>
+    </div>
   );
 }
 
