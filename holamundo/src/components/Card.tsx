@@ -19,29 +19,30 @@ const odsColors: Record<number, string> = {
   16: "#00689D",
   17: "#19486A",
 };
-
 export const Card = ({ itemOds }: { itemOds: InterfazSostenible }) => {
+  const color = odsColors[itemOds.id] ?? "#667eea";
   return (
     <div
       className="card"
       style={{
-        backgroundColor: "#fff",
-        borderRadius: "16px",
-        boxShadow: "0 10px 20px",
-        padding: "20px",
-        margin: "15px",
-        width: "220px",
-        display: "inline_block",
-        textAlign: "center",
-        fontFamily: "Arial, sans-serif",
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.transform = "translateY(0)";
-        e.currentTarget.style.boxShadow = "0 8px 16px rgba(0, 0, 0, 0.2)";
+        background: color,
+        padding: "1.5rem",
+        borderRadius: "12px",
+        boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
+        display: "flex",
+        flexDirection: "column",
+        gap: "1rem",
+        minWidth: "250px",
+        cursor: "pointer",
+        transition: "transform 0.3s ease, boxShadow 0.3s ease",
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.transform = "translateY(-8px)";
         e.currentTarget.style.boxShadow = "0 12px 24px rgba(0, 0, 0, 0.3)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.boxShadow = "0 8px 16px rgba(0, 0, 0, 0.2)";
       }}
     >
       <h3 style={{ fontSize: "2.5rem", color: "#fff", margin: 0 }}>
